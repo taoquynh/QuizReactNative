@@ -9,8 +9,6 @@ import {
   StatusBar,
   View,
   StyleSheet,
-  Button,
-  Alert,
   TouchableOpacity,
   Image,
   Dimensions,
