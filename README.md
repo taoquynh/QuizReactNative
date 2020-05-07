@@ -6,8 +6,7 @@
 - Sử dụng các component: StatusBar, SafeAreaView, Dimensions, View, Text, TouchableOpacity, FlastList, Image
 - Sử dụng thư viện NavigatorContainer trong điều hướng màn hình
 - Sử dụng route của NavigatorContainer để truyền dữ liệu
-- Sử dụng >useState< 
-- Sử dụng useEffect
+- Sử dụng useState, useEffect, setInterval
 
 ## Demo
 <p align="center">
