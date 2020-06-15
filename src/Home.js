@@ -1,10 +1,10 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  */
 
 import * as React from 'react';
 
 import {
-  SafeAreaView,
   Text,
   StatusBar,
   View,
@@ -13,32 +13,33 @@ import {
   Image,
   Dimensions,
 } from 'react-native';
-;
-
 function Home({navigation}) {
   return (
     <>
-      <StatusBar barStyle='light-content'/>
-        <View style={styles.body}>
-          <Image 
-          style={styles.styleImage} 
-          source={{uri: 'https://quizondemand.co.uk/wp-content/uploads/Lockdown-quiz-yellow-01-1-1200x800.jpg'}}>
-          </Image>
-          <View style = {{height: 30}}/>
-          <Text style={styles.text}>
-            Funny Quiz
-          </Text>
-          <View style = {{height: 10}}/>
-          <TouchableOpacity 
+      <StatusBar barStyle="light-content" />
+      <View style={styles.body}>
+        <Image
+          style={styles.styleImage}
+          source={{
+            uri:
+              'https://quizondemand.co.uk/wp-content/uploads/Lockdown-quiz-yellow-01-1-1200x800.jpg',
+          }}
+        />
+        <View style={{height: 30}} />
+        <Text style={styles.text}>Funny Quiz</Text>
+        <View style={{height: 10}} />
+        <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('QuizScreen', {name: 'QuizScreen'})}>
-            <Text style={{color: 'black', fontWeight: '600'}}>START</Text>
-          </TouchableOpacity>
-          <View style = {{height: 80}}/>
-        </View>
+          onPress={() =>
+            navigation.navigate('QuizScreen', {name: 'QuizScreen'})
+          }>
+          <Text style={{color: 'black', fontWeight: '600'}}>START</Text>
+        </TouchableOpacity>
+        <View style={{height: 80}} />
+      </View>
     </>
   );
-};
+}
 
 const screenWidth = Math.round(Dimensions.get('window').width);
 
@@ -47,13 +48,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#0e0e0e',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   text: {
     textAlign: 'center',
     color: '#fff',
     fontSize: 32,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   button: {
     backgroundColor: 'yellow',
@@ -64,10 +65,9 @@ const styles = StyleSheet.create({
   },
   styleImage: {
     width: screenWidth,
-    height: (800*screenWidth)/1200,
-    alignSelf: 'stretch'
+    height: (800 * screenWidth) / 1200,
+    alignSelf: 'stretch',
   },
-})
-
+});
 
 export default Home;
